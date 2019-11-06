@@ -1,4 +1,4 @@
-onload = start;
+onload = strt;
 
 function start() {
     var i = 1;
