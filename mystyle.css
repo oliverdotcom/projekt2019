@@ -33,6 +33,8 @@ a {
 }
 
 .box {
+    position: relative;
+    text-align: center;
 }
 
 .boxone {
@@ -44,7 +46,7 @@ a {
     margin-top: 4%;
 }
 
-.boxtwo1 {
+.boxfour {
     width: 30%;
     height: auto;
     cursor: pointer;
@@ -63,13 +65,14 @@ a {
     margin-top: 4%;
 }
 
-.boxone1 {
-    width: 55%;
+.boxfive {
+    width: 65%;
     margin: 0;
     height: auto;
     cursor: pointer;
     background: cornsilk;
     margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .boxthree {
@@ -90,7 +93,7 @@ a {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    transition: transform .5s ease;
+    transition: transform .5s;
 }
 
 .box:hover img {
@@ -99,11 +102,17 @@ a {
 }
 
 .box:hover > .article_hover {
-    transform: rotate(57deg) scale(1.2);
+    transform: scale(2);
+    transform: translate(-40%, 0%);
+    font-size: 8vh;
 }
 
 .box:hover > .article_hover1 {
-    transform: scale(1.2);
+    transform: scale(1.05);
+}
+
+.box:hover > .article_hover2 {
+    transform: scale(1.2) rotate(73deg) skewX(20deg);
 }
 
 
@@ -215,38 +224,41 @@ li a:hover {
     transform: rotate(57deg);
 }
 
-.article_hover{
+.article_hover {
     position: absolute;
     font-family: 'Futura', sans-serif;
-    font-size: 3vh;
+    font-size: 4vh;
     color: white;
-    top: 25%;
-    right: 40%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    bottom: 20%;
+    right: 6%;
+    transform: rotate(57deg);
+    z-index: 1000000;
+    transition: 0.2s ease;
+}
+
+.article_hover1 {
+    position: absolute;
+    font-family: 'Futura', sans-serif;
+    font-size: 3.5vh;
+    color: white;
+    bottom: 3%;
+    left: 4%;
+    margin: 0 auto;
     z-index: 10000;
     transition: transform .5s ease;
 }
 
-.article_hover1{
+.article_hover2 {
     position: absolute;
     font-family: 'Futura', sans-serif;
-    font-size: 25px;
+    font-size: 2.9vh;
     color: white;
-    margin-top: 18%;
-    margin-left: 4.5%;
+    margin: auto 0;
     z-index: 10000;
-    transition: transform .5s ease;
-}
-
-.article_hover2{
-    position: absolute;
-    font-family: 'Futura', sans-serif;
-    font-size: 25px;
-    color: white;
-    margin-top: 8%;
-    margin-left: 36%;
-    z-index: 10000;
-    transition: transform .5s ease;
+    top: 39%;
+    right: 42%;
+    transition: .5s ease;
     transform: rotate(73deg);
 }
 
@@ -663,10 +675,23 @@ label span {
 
 @media screen and (max-width: 768px) {
     .container {
-        border: none;
+        position: relative;
+        overflow-x: hidden;
+        height: 78vh;
         width: 100%;
-        height: 0;
-        padding-bottom: 55%;
+    }
+
+    .slide_img img{
+        min-width: 1080px;
+        top: 40%;
+        right: 0;
+        transform: translate(-40%, 0);
+    }
+
+    .bottom_right {
+        font-size: 40px;
+        right: 27%;
+        transform: rotate(60.5deg);
     }
 
     label span {
@@ -690,32 +715,74 @@ label span {
 
     }
 
-    .boxone{
-        width: 100%;
-    }
-
-    .boxtwo{
-        width: 100%;
-    }
-
-    .logo{
-        font-size: 60px;
+    .logo {
+        font-size: 5vh;
         padding-left: 3%;
     }
 
-    .nav{
+    .nav {
         display: none;
         height: 65px;
     }
 
-    .align{
+    .align {
         width: 100%;
     }
 
-    .navigation_container{
+    .navigation_container {
         width: 100%;
         z-index: 9999999999;
     }
+
+    .boxone {
+        width: 100%;
+    }
+
+    .boxtwo {
+        width: 100%;
+    }
+
+    .boxthree {
+        width: 100%;
+    }
+
+    .boxfour {
+        width: 100%;
+    }
+
+    .boxfive {
+        width: 100%;
+    }
+
+    .box:hover > .article_hover {
+        transform: scale(2);
+        transform: translate(-15%, 0%);
+    }
+
+    .box:hover > .article_hover2 {
+        transform: rotate(0) skewX(20deg);
+    }
+
+    .article_hover{
+        right: 1%;
+        font-size: 20px;
+    }
+
+    .article_hover1{
+        left: 10%;
+        transform: scale(1.2);
+    }
+
+    .article_hover2{
+        transform: rotate(0);
+        top: 8%;
+        right: 55%;
+    }
+
+    .article_subtitle_container{
+        width: 7vw;
+    }
+
 
 }
 
