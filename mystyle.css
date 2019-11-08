@@ -19,6 +19,41 @@ a {
     color: white;
 }
 
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: cornsilk;
+    position: relative;
+    display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+    font-family: 'Oswald', sans-serif;
+    padding: 14px 16px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: black;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: cornsilk;
+    color: #078644;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+
 .main {
     display: flex;
     flex-direction: row;
@@ -176,7 +211,7 @@ li a:hover {
 
 .logo {
     font-size: 40px;
-    color: #078644;
+        color: #078644;
     font-family: 'Futura', sans-serif;
     justify-content: flex-start;
     z-index: 999999999;
@@ -677,11 +712,11 @@ label span {
     .container {
         position: relative;
         overflow-x: hidden;
-        height: 78vh;
+        height: 70vh;
         width: 100%;
     }
 
-    .slide_img img{
+    .slide_img img {
         min-width: 1080px;
         top: 40%;
         right: 0;
@@ -726,12 +761,16 @@ label span {
     }
 
     .align {
-        width: 100%;
+        display: none;
     }
 
     .navigation_container {
         width: 100%;
         z-index: 9999999999;
+    }
+
+    .topnav {
+        display: block;
     }
 
     .boxone {
@@ -763,24 +802,28 @@ label span {
         transform: rotate(0) skewX(20deg);
     }
 
-    .article_hover{
+    .article_hover {
         right: 1%;
         font-size: 20px;
     }
 
-    .article_hover1{
+    .article_hover1 {
         left: 10%;
         transform: scale(1.2);
     }
 
-    .article_hover2{
+    .article_hover2 {
         transform: rotate(0);
         top: 8%;
         right: 55%;
     }
 
-    .article_subtitle_container{
+    .article_subtitle_container {
         width: 7vw;
+    }
+
+    .topnav a{
+        font-size: 40px
     }
 
 
