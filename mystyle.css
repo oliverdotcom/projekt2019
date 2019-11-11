@@ -31,7 +31,7 @@ a {
 .topnav #myLinks {
     display: none;
     font-family: 'Oswald', sans-serif;
-    padding: 14px 16px;
+    padding-left: 15px;
 }
 
 /* Style navigation menu links */
@@ -147,7 +147,7 @@ a {
 }
 
 .box:hover > .article_hover2 {
-    transform: scale(1.2) rotate(73deg) skewX(20deg);
+    transform: skewX(20deg);
 }
 
 
@@ -211,7 +211,7 @@ li a:hover {
 
 .logo {
     font-size: 40px;
-        color: #078644;
+    color: #078644;
     font-family: 'Futura', sans-serif;
     justify-content: flex-start;
     z-index: 999999999;
@@ -287,14 +287,14 @@ li a:hover {
 .article_hover2 {
     position: absolute;
     font-family: 'Futura', sans-serif;
-    font-size: 2.9vh;
+    font-size: 3.5vh;
     color: white;
     margin: auto 0;
     z-index: 10000;
-    top: 39%;
-    right: 42%;
+    top: 33%;
+    left: 2%;
     transition: .5s ease;
-    transform: rotate(73deg);
+    transform: rotate(-35deg);
 }
 
 
@@ -435,7 +435,9 @@ li a:hover {
 
 .addtobasket_button {
     background-color: #078644;
-    border: 2px solid #078644;
+    border: 6px solid #078644;
+    margin-top: 5px;
+    font-family: 'Futura', sans-serif;
     border-radius: 15px;
     color: white;
     font-size: 15px;
@@ -746,7 +748,6 @@ label span {
     .main {
         flex-direction: column;
         padding: 0 3.5%;
-        padding-top: 60px;
 
     }
 
@@ -814,25 +815,108 @@ label span {
 
     .article_hover2 {
         transform: rotate(0);
-        top: 8%;
-        right: 55%;
+        top: 30%;
+        left: 1.5%;
+        font-size: 40px;
     }
 
     .article_subtitle_container {
         width: 7vw;
     }
 
-    .topnav a{
+    .topnav a {
         font-size: 40px
+    }
+
+    .content_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        float: left;
+    }
+
+    .content_container p {
+        margin-left: 20vw;
+    }
+
+    .afterscuba {
+        align-content: center;
+        max-width: 80vw;
+    }
+
+    .icon_text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .product_image {
+        width: 40vw;
+        margin-left: 20vw;
+    }
+
+    .product_image2 {
+        width: 70vw;
+        margin-left: 13vw;
+    }
+
+    .product_image3 {
+        width: 50vw;
+        margin-left: 22vw;
+    }
+
+    .addtobasket_button {
+        margin-left: 20vw;
+    }
+
+    .article_title {
+        font-size: 40px;
+        line-height: 40px;
+        left: 15.5%
+    }
+
+    .article_subtitle {
+        position: absolute;
+        bottom: 25%;
+        left: 17%;
+        font-family: 'Futura', sans-serif;
+        color: white;
+        font-size: 11.5px;
+    }
+
+    .article_subtitle_container2{
+       width: 85vw;
+    }
+
+    .article_subtitle_text {
+        display: flex;
+        margin-left: 10px;
+        font-size: 30px;
+        width: 70vw;
+        margin-top: 25px;
+    }
+
+    .article_text {
+        display: inline-block;
+        font-family: 'Lato', sans-serif;
+        float: left;
+        height: auto;
+        line-height: 30px;
+        font-size: 18px;
+        margin: 5% 8%;
+        padding-bottom: 5%;
+    }
+
+    .chevron_container {
+        display: none;
     }
 
 
 }
 
-@media screen and(min-width: 970px) {
-    .me {
-        display: none;
-    }
+
+
+
 }
 
 

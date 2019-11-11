@@ -3,12 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitae Green &#124; Articles</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 <header>
-       <section class="align">
+    <!-- mobile version navigation -->
+
+    <div class="topnav">
+        <a href="index.html" class="logo"><span class="logo_a">vitae</span><span class="lightgreen">green</span></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="articlespage.html">ARTICLES</a>
+            <a href="shoppage.html">SHOP</a>
+            <a href="aboutpage.html">ABOUT</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <section class="align">
         <nav class="navigation_container">
             <div class="logo">
                 <a href="index.html" class="logo_a">vitae<span class="lightgreen1">green</span></a>
@@ -31,32 +48,35 @@
             <div class="imgcontain">
                 <a href="cityarticle.html">
                     <div class="box">
-                       <p class="article_hover">Green Cities<br>of the Future</p>
+                        <p class="article_hover">Green Cities<br>of the Future</p>
                         <img src="images/building-2308555_1920.jpg" alt="building">
                     </div>
                 </a>
             </div>
         </div>
         <div class="boxtwo">
-           <div class="imgcontain">
-            <div class="box">
-                <p class="article_hover1">A Diet for the Environment</p>
-                    <img src="images/vegetables-1212845_1920.jpg" alt="vegetables">
-                </div>
+            <div class="imgcontain">
+                <a href="dietarticle.html">
+                    <div class="box">
+                        <p class="article_hover1">A Diet for the Environment</p>
+                        <img src="images/vegetables-1212845_1920.jpg" alt="vegetables">
+                    </div>
+                </a>
             </div>
         </div>
         <div class="boxthree">
             <div class="imgcontain">
                 <div class="box">
-                   <p class="article_hover2">Danish Wind Power</p>
-                    <img src="images/pinwheel-4550711_1920.jpg" alt="windmills">
+                    <p class="article_hover2">How to live climate friendly</p>
+                    <img src="images/ecology-2985781_1920.jpg" alt="planting">
                 </div>
             </div>
-        </div><div class="boxfour">
+        </div>
+        <div class="boxfour">
             <div class="imgcontain">
                 <a href="cityarticle.html">
                     <div class="box">
-                        <img src="images/ecology-2985781_1920.jpg" alt="building">
+                        <img src="images/pinwheel-4550711_1920.jpg" alt="building">
                     </div>
                 </a>
             </div>
@@ -69,6 +89,4 @@
             </div>
         </div>
     </div>
-</body>
-
-</html>
+</body></html>
