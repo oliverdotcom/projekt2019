@@ -1,4 +1,4 @@
-onload = strt;
+onload = start;
 
 /* Slideshow */
 
