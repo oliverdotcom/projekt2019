@@ -975,6 +975,10 @@ label span {
         padding-bottom: 5%;
     }
 
+    .article_text img{
+        width: 80vw;
+    }
+
     .chevron_container {
         display: none;
     }
